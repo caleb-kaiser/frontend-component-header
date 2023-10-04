@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Logo = ({ src, alt, ...attributes }) => (
-  <img src={src} alt={alt} {...attributes} />
+  <img src="https://www.comet.com/site/wp-content/uploads/2022/05/comet-logo.svg" alt={alt} {...attributes} />
 );
 
 Logo.propTypes = {
