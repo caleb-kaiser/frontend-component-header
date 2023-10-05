@@ -16,13 +16,10 @@ const AuthenticatedUserDropdown = ({ intl, username }) => (
       <Dropdown.Toggle variant="outline-primary">
         <FontAwesomeIcon icon={faUserCircle} className="d-md-none" size="lg" />
         <span data-hj-suppress className="d-none d-md-inline">
-          {username} TEST
+          {username}
         </span>
       </Dropdown.Toggle>
       <Dropdown.Menu className="dropdown-menu-right">
-        <Dropdown.Item href={`${getConfig().ACCOUNT_PROFILE_URL}/u/${username}`}>
-          {intl.formatMessage(messages.profile)}
-        </Dropdown.Item>
         <Dropdown.Item href={getConfig().ACCOUNT_SETTINGS_URL}>
           {intl.formatMessage(messages.account)}
         </Dropdown.Item>

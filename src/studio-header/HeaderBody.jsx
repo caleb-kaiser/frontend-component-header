@@ -52,7 +52,6 @@ const HeaderBody = ({
           </Row>
         ) : (
           <>
-            TEST
             {isMobile ? (
               <Button
                 ref={setModalPopupTarget}
