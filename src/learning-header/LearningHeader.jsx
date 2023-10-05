@@ -8,6 +8,8 @@ import AnonymousUserMenu from './AnonymousUserMenu';
 import AuthenticatedUserDropdown from './AuthenticatedUserDropdown';
 import messages from './messages';
 
+import { ReactComponent as LogoSvg } from '../logo.svg';
+
 const LinkedLogo = ({
   href,
   src,
@@ -32,7 +34,10 @@ const LearningHeader = ({ intl, showUserDropdown }) => {
     <header className="learning-header">
       <a className="sr-only sr-only-focusable" href="#main-content">{intl.formatMessage(messages.skipNavLink)}</a>
       <div className="container-xl py-2 d-flex align-items-center">
-        <img className="d-block" src="/logo.svg" alt="Comet ML" />
+        <LogoSvg className="d-block" />
+        <div className="flex-grow-1 course-title-lockup" style={{ lineHeight: 1 }}>
+          <span className="d-block small m-0">LLMOps</span>
+        </div>
         {showUserDropdown && authenticatedUser && (
         <AuthenticatedUserDropdown
           username={authenticatedUser.username}
