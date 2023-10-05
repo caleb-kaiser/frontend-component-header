@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { getConfig } from '@edx/frontend-platform';
+// import { getConfig } from '@edx/frontend-platform';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
 
@@ -31,12 +31,7 @@ const LearningHeader = ({
   const { authenticatedUser } = useContext(AppContext);
 
   const headerLogo = (
-    <LinkedLogo
-      className="logo"
-      href={`${getConfig().LMS_BASE_URL}/dashboard`}
-      src={getConfig().LOGO_URL}
-      alt={getConfig().SITE_NAME}
-    />
+    <div>TEST</div>
   );
 
   return (
