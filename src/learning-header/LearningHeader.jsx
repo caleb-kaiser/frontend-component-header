@@ -34,7 +34,7 @@ const LearningHeader = ({ intl, showUserDropdown }) => {
     <header className="learning-header">
       <a className="sr-only sr-only-focusable" href="#main-content">{intl.formatMessage(messages.skipNavLink)}</a>
       <div className="container-xl py-2 d-flex align-items-center">
-        <LogoSvg className="d-block" />
+        <LogoSvg className="d-block logo" />
         <div className="flex-grow-1 course-title-lockup" style={{ lineHeight: 1 }}>
           <span className="d-block small m-0">LLMOps</span>
         </div>
