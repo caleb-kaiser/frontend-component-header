@@ -36,7 +36,7 @@ const LearningHeader = ({ intl, showUserDropdown }) => {
       <div className="container-xl py-2 d-flex align-items-center">
         <LogoSvg className="d-block logo" />
         <div className="flex-grow-1 course-title-lockup" style={{ lineHeight: 1 }}>
-          <span className="d-block small m-0">LLMOps</span>
+          <span className="d-block small m-0"> </span>
         </div>
         {showUserDropdown && authenticatedUser && (
         <AuthenticatedUserDropdown
