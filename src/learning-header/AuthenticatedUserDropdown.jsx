@@ -18,9 +18,6 @@ const AuthenticatedUserDropdown = ({ intl, username }) => (
       </span>
     </Dropdown.Toggle>
     <Dropdown.Menu className="dropdown-menu-right">
-      <Dropdown.Item href={getConfig().ACCOUNT_SETTINGS_URL}>
-        {intl.formatMessage(messages.account)}
-      </Dropdown.Item>
       <Dropdown.Item href={getConfig().LOGOUT_URL}>
         {intl.formatMessage(messages.signOut)}
       </Dropdown.Item>
